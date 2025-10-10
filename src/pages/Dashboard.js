@@ -1,5 +1,7 @@
 // import Base from "./pages/Base";
 import Base from "./Base";
+import { faList } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Dashboard = () =>{
     return(
         <body>
@@ -19,7 +21,7 @@ const Dashboard = () =>{
                         <div class="card">
                             <div class="card-result">
                                 <div class="icon">
-                                    <div class="fa fa-user"></div>
+                                    <div>< FontAwesomeIcon icon={faList}/></div>
                                 </div>
                                 <div class="contenu">
                                     <p>Total des Clients</p>
@@ -28,7 +30,7 @@ const Dashboard = () =>{
                             </div>
                             <div class="card-result-1">
                                 <div class="icon">
-                                    <div class="fa fa-user"></div>
+                                    <div>< FontAwesomeIcon icon={faList}/></div>
                                 </div>
                                 <div class="contenu">
                                     <p>Total des Clients</p>
@@ -37,7 +39,7 @@ const Dashboard = () =>{
                             </div>
                             <div class="card-result-2">
                                 <div class="icon">
-                                    <div class="fa fa-user"></div>
+                                    <div>< FontAwesomeIcon icon={faList}/></div>
                                 </div>
                                 <div class="contenu">
                                     <p>Total des Clients</p>
@@ -46,7 +48,7 @@ const Dashboard = () =>{
                             </div>
                             <div class="card-result-3">
                                 <div class="icon">
-                                    <div class="fa fa-user"></div>
+                                    <div>< FontAwesomeIcon icon={faList}/></div>
                                 </div>
                                 <div class="contenu">
                                     <p>Total des Clients</p>

@@ -1,5 +1,10 @@
 // import {Link, Outlet} from "react-router-dom"; 
 import { Link,useNavigate, Outlet } from "react-router-dom";
+import { faChartArea } from "@fortawesome/free-solid-svg-icons";
+import { faTableCells } from "@fortawesome/free-solid-svg-icons";
+import { faSave } from "@fortawesome/free-solid-svg-icons";
+import { faSignOut } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import React from "react";
 const Base = () =>{
     const navigate = useNavigate()
@@ -15,20 +20,20 @@ const Base = () =>{
                     <h3>Admin</h3>
                 </div>
                 <div class="navlink">
-                    <Link to='/insert' class="nav-item">
-                        <i class="fa fa-user"></i>
+                    <Link to='/dashboard' class="nav-item">
+                        <i>< FontAwesomeIcon icon={faChartArea}/></i>
                         Dashboard
                     </Link>
                     <Link to='/read' class="nav-item">
-                        <i class="fa fa-user"></i>
+                        <i>< FontAwesomeIcon icon={faTableCells}/></i>
                         Read
                     </Link>
                     <Link to='/insert' class="nav-item">
-                        <i class="fa fa-user"></i>
+                        <i>< FontAwesomeIcon icon={faSave}/></i>
                         Insert
                     </Link>
                     <Link to="#" onClick={handleLogout} class="nav-item" >
-                        <i class="fa fa-user"></i>
+                        <i>< FontAwesomeIcon icon={faSignOut}/></i>
                         Logout
                     </Link>
                 </div>
