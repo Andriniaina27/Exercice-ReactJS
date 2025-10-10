@@ -3,6 +3,9 @@ import Base from "./Base";
 import { faList } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Dashboard = () =>{
+    const date = new Date()
+    const option = { weekday : 'long', day : "numeric", month : 'long', year : 'numeric'}
+    const dateFormatee = date.toLocaleDateString('fr-FR', option)
     return(
         <body>
             <div class="wrapper">
@@ -11,7 +14,7 @@ const Dashboard = () =>{
                     <div class="head">
                         <h3>Dashboard</h3>
                         <div class="date">
-                            <h4>Mercredi 10 juin 2025</h4>
+                            <h4>{dateFormatee.charAt(0).toUpperCase() + dateFormatee.slice(1)}</h4>
                         </div>
                         <div class="icon">
                             <i class="fa fa-bars" id="menu-btn"></i>
